@@ -1,0 +1,41 @@
+#h1{
+    cursor:pointer;
+    display: inline-block;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn:hover{
+    color:#212529
+}
+
+.success{
+    background-color: #198754;
+    color: white;
+    border-color: #198754;
+}
+
+.success:hover{
+    color:#fff;
+    background-color:#157347;
+    border-color:#146c43
+}
+
+.primary{
+    color:#fff;
+    background-color:#0d6efd;
+    border-color:#0d6efd
+}
+
+.primary:hover{
+    color:#fff;
+    background-color:#0b5ed7;
+    border-color:#0a58ca
+}
