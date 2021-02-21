@@ -23,15 +23,15 @@ O que estudar... Javascript Módulo Avançado.
 
     ```jsx
     const dog = {
-    	sound: "Au Au",
-    	speak: genericSpeak
+        sound: "Au Au",
+        speak: genericSpeak
     }
 
     function genericSpeak(){
-    	console.log(***this.sound);
+        console.log(***this.sound);
     }
 
-    dog.speak() // expected: "Au Au";***
+    dog.speak() // expected: "Au Au";
     ```
 
     A função `genericSpeak()` da um console.log em `this.sound`. Ok, o objeto Dog realmente tem um sound, tranquilo. Mas e se a gente executasse sem contexto? (sem o dog) e aí? 
@@ -43,8 +43,6 @@ O que estudar... Javascript Módulo Avançado.
     Poxa... queria que eu passasse ali como Parâmetro o dog e aí o dog que falaria...
 
     Então, aí que entra o `bind();`
-
-    ; 
 
     ```jsx
     const bindedObject = genericSpeak().bind(dog);
@@ -60,12 +58,12 @@ O que estudar... Javascript Módulo Avançado.
     ```jsx
     //Função anonima normal
     const dobro = function (x){
-    		return x * 2;
+        return x * 2;
     }
 
     //Com Arrow Funtion () =>
     const dobro = (x) => {
-    	return x * 2;
+        return x * 2;
     }
 
     //Simplificando ainda mais
@@ -74,8 +72,8 @@ O que estudar... Javascript Módulo Avançado.
 
     //Sem Parametro
     const dobro = () => {
-    	//something here
-    	//something here too...
+        //something here
+        //something here too...
     }
     ```
 
@@ -89,7 +87,7 @@ O que estudar... Javascript Módulo Avançado.
 
     [Callback](https://pt.wikipedia.org/wiki/Callback)
 
-- [x]  Aula 6 Promises
+- [x]  Aula 6 [Promises](https://github.com/Rayllanderson/treinamento-js/blob/master/JS%20-%20M%C3%B3dulo%20Avan%C3%A7ado/promise.js) 
 
     Pra que serve? a grosso modo, é um callback melhorado! Ao meu entender, é um callback mais sofisticado, com mais segurança e métodos interessantes. Exemplo:
 
@@ -141,14 +139,14 @@ O que estudar... Javascript Módulo Avançado.
 
     //Funcionamento de uma função async await
     async function executar(){
-    		await add('João Lucas');
-    		print();
+        await add('João Lucas');
+        print();
     }
     ```
 
     Temos que colocar o `async` na declaração da função, e então usar o `await` que vai dizer pra esperar a função terminar pra poder executar a próxima.
 
-- [x]  Aula 8 Filter
+- [x]  Aula 8 [Filter](https://github.com/Rayllanderson/treinamento-js/blob/master/JS%20-%20M%C3%B3dulo%20Avan%C3%A7ado/filter.js)
 
     Pra que serve? Simples! é um `forEach()`com uma condição no meio. Se essa condição for true, vai gerar um novo array. É um método que já existe em todo array.
 
@@ -164,7 +162,7 @@ O que estudar... Javascript Módulo Avançado.
 
     Viu? é igual `forEach()` normal. Mas ao contrário do `forEach()`que é void, esse retorna um novo Array com os elementos que passaram na condição.
 
-- [x]  Aula 9 Map
+- [x]  Aula 9 [Map](https://github.com/Rayllanderson/treinamento-js/blob/master/JS%20-%20M%C3%B3dulo%20Avan%C3%A7ado/map.js)
 
     Pra que serve? Ao contrário do Map do Java em que guarda chave e valor, esse método map() do array aqui no JS vai fazer algo parecido com o `forEach()`.. A diferença é que o `forEach()` vai executar algo.. já o `Map()` vai CRIAR um **NOVO** array com retorno desejado. Like...
 
@@ -224,7 +222,7 @@ O que estudar... Javascript Módulo Avançado.
     let alunoB = new Object({}, alunoA);
     ```
 
-- [x]  Aula 11 Reduce
+- [x]  Aula 11 [Reduce](https://github.com/Rayllanderson/treinamento-js/blob/master/JS%20-%20M%C3%B3dulo%20Avan%C3%A7ado/reduce.js)
 
     Pra que serve? Percorre o Array e gera um valor único. Whaat? Take this:
 
@@ -241,7 +239,7 @@ O que estudar... Javascript Módulo Avançado.
 
     `reduce()` recebe a função que vai calcular as paradas, sendo o total o acumulador, e a.idade o valor atual do array, no caso vai ser um loop, então vai ser 23 e 35, a idade dos alunos do array. E o 0 é o index, é de onde parte a contagem. Por exemplo: 0 + 23 + 35 = 58; 
 
-- [x]  Aula 13 Fetch
+- [x]  Aula 13 [Fetch](https://github.com/Rayllanderson/treinamento-js/blob/master/JS%20-%20M%C3%B3dulo%20Avan%C3%A7ado/fetch.js)
 
     Pra que serve? Pra consumir uma API. Ele é uma Promise, então tem os métodos `then()` e `catch()`
 
@@ -263,9 +261,9 @@ O que estudar... Javascript Módulo Avançado.
 
     ```jsx
     try{
-    	doingSomething();
+        doingSomething();
     }catch(err){
-    	console.log('An error has ocurred. Cause:' + err);
+        console.log('An error has ocurred. Cause:' + err);
     }
     ```
 
@@ -273,7 +271,7 @@ O que estudar... Javascript Módulo Avançado.
 
     ```jsx
     function doSomething(){
-    	throw "I'm throwing an error";
+        throw "I'm throwing an error";
     }
     ```
 
